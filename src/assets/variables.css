@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+:root {
+    --p1: 4px;
+    --p2: 8px;
+    --p3: 12px;
+    --p4: 16px;
+    --p8: 32px;
+
+    --title-size: 40px;
+    --touchable-height: 44px;
+    
+    --menu-height: 62px;
+
+    --font: 'Inter', sans-serif;
+    --title-color: #000007;
+    --text-main-color: #000000;
+    --text-secondary-color: #616269;
+    --vibrant-color: #065ad8;
+    --download-app-bg-color: #0a9250;
+
+    --divider-color: #f0f2f4;
+
+    --information-background-color: #e6eeff;
+    --information-text-color: #355396;
+
+    --text-input-bg-color: #fafcfe;
+    --border-color: #e9ebef;
+
+    --button-bg-color: #065ad8;
+    --button-text-color: white;
+}

@@ -1,0 +1,82 @@
+@import "../../assets/variables.css";
+
+.cursor {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+}
+
+.mainInfoContainer {
+    width: "100%";
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--p8);
+}
+
+.title {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--text-main-color);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.loginMethod {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-secondary-color);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p4);
+}
+
+.textInputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--p4);
+    width: "100%";
+    height: var(--touchable-height);
+    background-color: var(--text-input-bg-color);
+    border-width: 1px;
+    border-radius: var(--p2);
+    border-color: var(--border-color);
+    border-style: solid;
+    padding: 0 var(--p4) 0 var(--p4);
+}
+
+.textInput {
+    flex : 1;
+    height: var(--touchable-height);
+    background-color: transparent;
+    outline: none;
+    border-width: 0px;
+    font-family: var(--font);
+    font-weight: 500;
+    color: var(--text-main-color);
+}
+
+.button {
+    width: 100%;
+    height: var(--touchable-height);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-size: 14px;
+    font-family: var(--font);
+    font-weight: 500;
+    outline: none;
+    border-width: 0px;
+    border-radius: var(--p2);
+    cursor: pointer;
+}

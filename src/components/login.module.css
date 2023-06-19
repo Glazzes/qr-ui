@@ -1,0 +1,128 @@
+@import "../assets/variables.css";
+
+:root {
+    --logo-size: 30px;
+    --circle-size: calc(var(--logo-size) / 2);
+    --quote-text-color: #f1f6ff;
+    --picture-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.login {
+    width: calc(50% - 32px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: var(--logo-size);
+    height: var(--logo-size);
+    background-color: var(--vibrant-color);
+    border-radius: var(--p2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCircle {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.info {
+    width: calc(50% - 32px);
+    height: 100vh;
+    background-color: #f3f5f9;
+    border-radius: var(--p4);
+    padding: var(--p8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 30px;
+    color: #0a0a0c;
+}
+
+.subtitle {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #8c8f97;
+}
+
+.quoteContainer {
+    background-color: #2d3345;
+    border-radius: var(--p2);
+    padding: var(--p4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--p4);
+}
+
+.quoteContainerText {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--quote-text-color);
+}
+
+.santiContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--p4);
+}
+
+.picture {
+    width: var(--picture-size);
+    height: var(--picture-size);
+    border-radius: 50%;
+}
+
+.santiInfoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-family: var(--font);
+    font-weight: 500;
+    color: var(--quote-text-color);
+    font-size: 14px;
+    display: inline-block;
+}
+
+.role {
+    font-family: var(--font);
+    font-weight: 500;
+    color: #949bad;
+    font-size: 13px;
+    display: inline-block;   
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 90%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+}
